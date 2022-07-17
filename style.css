@@ -1,0 +1,263 @@
+:root {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 1.8rem;
+  font-family: "Josefin Sans", sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+/* BACKGROUND IMAGE */
+.img {
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.background-light {
+  background-color: hsl(0, 0%, 95%);
+  background-image: url("images/bg-desktop-light.jpg");
+}
+
+.background-dark {
+  background-color: hsl(235, 21%, 11%);
+  background-image: url("images/bg-desktop-dark.jpg");
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+}
+
+.hero-heading {
+  align-self: flex-start;
+  font-size: 4rem;
+  font-weight: 700;
+  letter-spacing: 1.5rem;
+  color: #fff;
+}
+
+.moon-img {
+  align-self: flex-end;
+}
+
+/* MAIN */
+.main {
+  display: flex;
+  flex-direction: column;
+  margin-top: 7rem;
+}
+
+/* first-section--create */
+
+.create {
+  position: relative;
+  margin-bottom: 2.4rem;
+  box-shadow: 0 3.5rem 5rem rgba(194, 195, 214, 0.5);
+  padding: 1.8rem 0 1.8rem 2.4rem;
+  background-color: #fff;
+  border-radius: 0.5rem;
+}
+
+.create-dark {
+  background-color: hsl(235, 24%, 19%);
+  color: hsl(234, 11%, 52%);
+  box-shadow: 0 2.4rem 5rem rgba(0, 0, 0, 0.5);
+}
+
+.create-list {
+  width: 100%;
+  font-size: 1.8rem;
+  border-color: transparent;
+  caret-color: hsl(220, 98%, 61%);
+  color: hsl(235, 19%, 35%);
+}
+
+.create-list:focus-visible {
+  outline: none;
+}
+
+.create-list::placeholder {
+  font-family: "Josefin Sans", sans-serif;
+  color: hsl(236, 9%, 61%);
+}
+
+.create-list--dark {
+  background-color: #25273d;
+  color: hsl(233, 11%, 84%);
+}
+
+.create-list--dark::placeholder {
+  color: hsl(234, 11%, 52%);
+}
+
+.radio-btn {
+  width: 2.4rem;
+  height: 2.4rem;
+  position: absolute;
+  top: 16px;
+  left: 24px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 1px solid hsl(236, 37%, 92%);
+  background-color: #fff;
+}
+
+.radio-btn:hover {
+  border: 1px solid hsl(192, 100%, 67%);
+}
+
+.radio-btn--dark {
+  border: 1px solid hsl(237, 14%, 26%);
+  background-color: hsl(235, 24%, 19%);
+}
+
+.radio-background {
+  background-image: url("images/icon-check.svg"),
+    linear-gradient(to bottom right, hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* section-section--list */
+
+.lists {
+  background-color: #fff;
+  border-radius: 0.5rem;
+}
+
+.lists-list {
+  max-height: 40rem;
+  overflow: auto;
+  color: hsla(235, 19%, 35%, 1);
+}
+
+.list {
+  text-align: center;
+  padding: 1.8rem 0;
+}
+
+/* change */
+.list1 {
+  text-align: center;
+  padding: 1.8rem 0;
+  display: flex;
+  align-items: center;
+  padding: 1.8rem 0 1.8rem 7.2rem;
+}
+
+/* .list1::after {
+  content: url("images/icon-cross.svg");
+  display: block;
+} */
+
+.list1:hover {
+  cursor: pointer;
+}
+
+.list1:hover .cross {
+  visibility: visible;
+}
+
+.position {
+  position: relative;
+}
+
+.cross {
+  position: absolute;
+  right: 24px;
+  top: 17px;
+  visibility: hidden;
+}
+
+hr {
+  width: 100%;
+  height: 1px;
+}
+/* DATA section */
+
+.data {
+  padding: 1.8rem 2.4rem;
+  display: flex;
+  align-items: center;
+  gap: 1.8rem;
+  font-size: 1.4rem;
+}
+
+.left-items {
+  margin-right: 9.6rem;
+}
+
+.clear-completed {
+  margin-left: 5.6rem;
+}
+
+.btn {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.4rem;
+  border-color: transparent;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.active:hover {
+  font-weight: 700;
+}
+
+.clear-completed:hover {
+  color: hsla(235, 19%, 35%, 1);
+}
+
+.dark {
+  color: hsl(234, 11%, 52%);
+  background-color: hsl(235, 24%, 19%);
+}
+
+.dark.active:hover {
+  color: #fff;
+}
+
+.dark.clear-completed:hover {
+  color: #fff;
+}
+
+.list-dark {
+  background-color: hsl(235, 24%, 19%);
+  color: hsla(235, 39%, 85%, 1);
+  letter-spacing: 0.25px;
+}
+
+/* ALL */
+.all {
+  color: hsl(220, 98%, 61%);
+}
+
+.para--light {
+  color: hsla(233, 11%, 84%, 1);
+  letter-spacing: -0.25px;
+  text-decoration: line-through;
+}
+
+.para--dark {
+  color: hsla(235, 39%, 85%, 1);
+}
+
+.para-line--dark {
+  color: hsla(233, 14%, 35%, 1);
+}
+
+.active--a {
+  display: none;
+}
